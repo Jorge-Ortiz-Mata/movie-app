@@ -11,6 +11,14 @@
 		CF1D012F2B5B286800E196FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D012E2B5B286800E196FB /* ContentView.swift */; };
 		CF1D01312B5B286A00E196FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1D01302B5B286A00E196FB /* Assets.xcassets */; };
 		CF1D01342B5B286A00E196FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1D01332B5B286A00E196FB /* Preview Assets.xcassets */; };
+		CF1D013D2B5B2AC600E196FB /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D013C2B5B2AC600E196FB /* WelcomeScreenView.swift */; };
+		CF1D013F2B5B2F3200E196FB /* VideosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D013E2B5B2F3200E196FB /* VideosScreenView.swift */; };
+		CF1D01422B5B30DB00E196FB /* CardVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D01412B5B30DB00E196FB /* CardVideoView.swift */; };
+		CF3AC63F2B6324D90006AF2C /* videosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC63E2B6324D90006AF2C /* videosData.swift */; };
+		CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6412B6324F00006AF2C /* VideoModel.swift */; };
+		CF3AC6442B6335A30006AF2C /* VideoSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */; };
+		CF3AC6462B6337C00006AF2C /* VideoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */; };
+		CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		CF1D012E2B5B286800E196FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF1D01302B5B286A00E196FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1D01332B5B286A00E196FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF1D013C2B5B2AC600E196FB /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		CF1D013E2B5B2F3200E196FB /* VideosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosScreenView.swift; sourceTree = "<group>"; };
+		CF1D01412B5B30DB00E196FB /* CardVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVideoView.swift; sourceTree = "<group>"; };
+		CF3AC63E2B6324D90006AF2C /* videosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videosData.swift; sourceTree = "<group>"; };
+		CF3AC6412B6324F00006AF2C /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSectionTitle.swift; sourceTree = "<group>"; };
+		CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenView.swift; sourceTree = "<group>"; };
+		CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,10 @@
 			children = (
 				CF1D012C2B5B286800E196FB /* video_appApp.swift */,
 				CF1D012E2B5B286800E196FB /* ContentView.swift */,
+				CF3AC6472B6348430006AF2C /* enums */,
+				CF3AC6402B6324DF0006AF2C /* models */,
+				CF3AC63D2B6324C10006AF2C /* data */,
+				CF1D013A2B5B2AA000E196FB /* views */,
 				CF1D01302B5B286A00E196FB /* Assets.xcassets */,
 				CF1D01322B5B286A00E196FB /* Preview Content */,
 			);
@@ -65,6 +85,58 @@
 				CF1D01332B5B286A00E196FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF1D013A2B5B2AA000E196FB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D01402B5B309C00E196FB /* components */,
+				CF1D013B2B5B2AB000E196FB /* screen */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CF1D013B2B5B2AB000E196FB /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D013C2B5B2AC600E196FB /* WelcomeScreenView.swift */,
+				CF1D013E2B5B2F3200E196FB /* VideosScreenView.swift */,
+				CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		CF1D01402B5B309C00E196FB /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D01412B5B30DB00E196FB /* CardVideoView.swift */,
+				CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		CF3AC63D2B6324C10006AF2C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CF3AC63E2B6324D90006AF2C /* videosData.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CF3AC6402B6324DF0006AF2C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CF3AC6412B6324F00006AF2C /* VideoModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CF3AC6472B6348430006AF2C /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3AC6442B6335A30006AF2C /* VideoSectionTitle.swift in Sources */,
 				CF1D012F2B5B286800E196FB /* ContentView.swift in Sources */,
+				CF3AC6462B6337C00006AF2C /* VideoScreenView.swift in Sources */,
+				CF1D013F2B5B2F3200E196FB /* VideosScreenView.swift in Sources */,
+				CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */,
+				CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */,
+				CF3AC63F2B6324D90006AF2C /* videosData.swift in Sources */,
+				CF1D01422B5B30DB00E196FB /* CardVideoView.swift in Sources */,
 				CF1D012D2B5B286800E196FB /* video_appApp.swift in Sources */,
+				CF1D013D2B5B2AC600E196FB /* WelcomeScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
