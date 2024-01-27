@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SettingsScreenView: View {
+    @State var counter: Int = 0
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack {            
             ScrollView {
                 VStack {
                     Image("man")
