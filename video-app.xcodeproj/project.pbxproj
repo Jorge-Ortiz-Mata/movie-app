@@ -19,6 +19,9 @@
 		CF3AC6442B6335A30006AF2C /* VideoSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */; };
 		CF3AC6462B6337C00006AF2C /* VideoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */; };
 		CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */; };
+		CF41AD192B64801E009DFCCA /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */; };
+		CF41AD1B2B648050009DFCCA /* TabScreensViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */; };
+		CF8D376F2B649091001988D9 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D376E2B649091001988D9 /* utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSectionTitle.swift; sourceTree = "<group>"; };
 		CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenView.swift; sourceTree = "<group>"; };
 		CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
+		CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
+		CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreensViews.swift; sourceTree = "<group>"; };
+		CF8D376E2B649091001988D9 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			children = (
 				CF1D012C2B5B286800E196FB /* video_appApp.swift */,
 				CF1D012E2B5B286800E196FB /* ContentView.swift */,
+				CF8D376D2B649078001988D9 /* config */,
 				CF3AC6472B6348430006AF2C /* enums */,
 				CF3AC6402B6324DF0006AF2C /* models */,
 				CF3AC63D2B6324C10006AF2C /* data */,
@@ -102,6 +109,8 @@
 				CF1D013C2B5B2AC600E196FB /* WelcomeScreenView.swift */,
 				CF1D013E2B5B2F3200E196FB /* VideosScreenView.swift */,
 				CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */,
+				CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */,
+				CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */,
 			);
 			path = screen;
 			sourceTree = "<group>";
@@ -137,6 +146,14 @@
 				CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */,
 			);
 			path = enums;
+			sourceTree = "<group>";
+		};
+		CF8D376D2B649078001988D9 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D376E2B649091001988D9 /* utils.swift */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +232,11 @@
 				CF1D013F2B5B2F3200E196FB /* VideosScreenView.swift in Sources */,
 				CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */,
 				CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */,
+				CF8D376F2B649091001988D9 /* utils.swift in Sources */,
 				CF3AC63F2B6324D90006AF2C /* videosData.swift in Sources */,
 				CF1D01422B5B30DB00E196FB /* CardVideoView.swift in Sources */,
+				CF41AD1B2B648050009DFCCA /* TabScreensViews.swift in Sources */,
+				CF41AD192B64801E009DFCCA /* SettingsScreenView.swift in Sources */,
 				CF1D012D2B5B286800E196FB /* video_appApp.swift in Sources */,
 				CF1D013D2B5B2AC600E196FB /* WelcomeScreenView.swift in Sources */,
 			);

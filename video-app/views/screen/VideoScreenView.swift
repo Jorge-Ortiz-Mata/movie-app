@@ -15,27 +15,6 @@ struct VideoScreenView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                HStack {
-                    Group {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "arrow.backward.circle")
-                                .foregroundColor(.white)
-                                .bold()
-                                .font(.title3)
-                            Text("Regresar")
-                                .bold()
-                                .foregroundColor(.white)
-                                .font(.title3)
-                        }
-                    }
-                    .padding(.bottom, 10)
-                    
-                
-                    Spacer()
-                }
-                
                 VStack {
                     VideoPlayer(player: AVPlayer(url:  URL(string: video.videoURL)!))
                         .frame(height: 250)
@@ -90,9 +69,8 @@ struct VideoScreenView: View {
                     .padding(.top, 20)
                 }
             }
-            
+            .toolbar(.hidden, for: .tabBar)
             .background(.black)
-            .toolbar(.hidden, for: .navigationBar)
         }
     }
 }

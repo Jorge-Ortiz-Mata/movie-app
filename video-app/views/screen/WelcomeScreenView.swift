@@ -32,7 +32,7 @@ struct WelcomeScreenView: View {
                         }
                         .padding(.bottom, 20)
                         
-                        NavigationLink(destination: VideosScreenView()) {
+                        NavigationLink(destination: TabScreensViews().navigationBarBackButtonHidden(true)) {
                             HStack {
                                 Image(systemName: "arrowshape.turn.up.right.circle.fill")
                                     .foregroundColor(.white)
@@ -46,6 +46,7 @@ struct WelcomeScreenView: View {
                             .background(Color(red: 0, green: 0.3, blue: 0.2))
                             .cornerRadius(10)
                         }
+                        .padding(.bottom, 20)
                     }
                 }
                 .padding(20)

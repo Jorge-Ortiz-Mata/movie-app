@@ -9,34 +9,11 @@ import SwiftUI
 
 struct VideosScreenView: View {
     var videosData: [VideoModel] = videosDataList
-    var primaryColor: Color = Color(red: 0, green: 0, blue: 0)
-    var secondaryColor: Color = Color(red: 0.2, green: 0.2, blue: 0.2)
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                HStack {
-                    Group {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "arrow.backward.circle")
-                                .foregroundColor(.white)
-                                .bold()
-                                .font(.title3)
-                            Text("Regresar")
-                                .bold()
-                                .foregroundColor(.white)
-                                .font(.title3)
-                        }
-                    }
-                    .padding(.bottom, 10)
-                    
-                
-                    Spacer()
-                }
-                
                 VStack(alignment: .leading) {
                     VideoSectionTitle(title: "Fantasia")
                     
@@ -98,8 +75,9 @@ struct VideosScreenView: View {
             .background(
                 LinearGradient(gradient: Gradient(colors: [primaryColor, secondaryColor]), startPoint: .top, endPoint: .bottom)
             )
-            .toolbar(.hidden, for: .navigationBar)
         }
+        
+        
     }
 }
 
