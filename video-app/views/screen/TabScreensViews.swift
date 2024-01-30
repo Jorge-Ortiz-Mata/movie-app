@@ -15,6 +15,11 @@ struct TabScreensViews: View {
                     .tabItem {
                         Label("Peliculas", systemImage: "video.circle.fill")
                 }
+                
+                SearchScreenView()
+                    .tabItem {
+                        Label("Buscar", systemImage: "magnifyingglass")
+                    }
             
                 SettingsScreenView()
                     .tabItem {

@@ -15,8 +15,7 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/avatar.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Fantasia",
-        reviews: 4
+        category: "Fantasia"
     ),
     VideoModel(
         id: 2,
@@ -25,8 +24,7 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/hangover-two.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Humor y comedia",
-        reviews: 5
+        category: "Humor y comedia"
     ),
     VideoModel(
         id: 3,
@@ -35,8 +33,7 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/iron-man.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Superheroes",
-        reviews: 4
+        category: "Superheroes"
     ),
     VideoModel(
         id: 4,
@@ -45,8 +42,7 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/interestelar.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Ciencia y ficcion",
-        reviews: 5
+        category: "Ciencia y ficcion"
     ),
     VideoModel(
         id: 5,
@@ -55,8 +51,7 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/spiderman.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Superheroes",
-        reviews: 5
+        category: "Superheroes"
     ),
     VideoModel(
         id: 6,
@@ -65,7 +60,6 @@ let videosDataList: [VideoModel] = [
         videoURL: "https://storage.googleapis.com/videos-app-bucket/wolf-wall-street.mp4",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         duration: 120,
-        category: "Comedia y Drama",
-        reviews: 5
+        category: "Comedia y Drama"
     ),
 ]

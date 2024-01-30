@@ -11,6 +11,7 @@ import AVKit
 struct VideoScreenView: View {
     var video: VideoModel
     @Environment(\.dismiss) private var dismiss
+    @State var rating: Int = 3
     
     var body: some View {
         NavigationStack {
@@ -47,14 +48,14 @@ struct VideoScreenView: View {
                                     .foregroundColor(.white)
                                     .font(.body)
                                 Group {
-                                    Text(String(repeating: "⭐️", count: video.reviews))
+                                    Text(String(repeating: "⭐️", count: rating))
                                         .font(.caption)
                                 }
                             }
                             .padding(.bottom, 2)
                             
                             Group {
-                                Text("Categoria: \(video.category) min")
+                                Text("Categoria: \(video.category)")
                                     .font(.footnote)
                                     .foregroundColor(.white)
                             }
@@ -84,8 +85,7 @@ struct VideoScreenView: View {
             videoURL: "https://storage.googleapis.com/videos-app-bucket/spiderman.mp4",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             duration: 120,
-            category: "Ciencia y ficcion",
-            reviews: 5
+            category: "Ciencia y ficcion"
         )
     )
 }

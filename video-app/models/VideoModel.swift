@@ -15,5 +15,4 @@ struct VideoModel: Identifiable {
     var description: String
     var duration: Int
     var category: String
-    var reviews: Int
 }

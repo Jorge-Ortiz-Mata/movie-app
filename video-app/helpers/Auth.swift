@@ -48,7 +48,7 @@ struct Authentication {
                 return
             }
             
-            guard let user = result?.user, let imageURL = user.profile?.imageURL(withDimension: 180)
+            guard let user = result?.user, let imageURL = user.profile?.imageURL(withDimension: 150)
             else {
                 // ...
                 return

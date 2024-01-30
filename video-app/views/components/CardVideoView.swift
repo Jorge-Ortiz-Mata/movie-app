@@ -72,8 +72,7 @@ struct CardVideoView: View {
             videoURL: "https://storage.googleapis.com/videos-app-bucket/spiderman.mp4",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             duration: 120,
-            category: "Ciencia y ficcion",
-            reviews: 5
+            category: "Ciencia y ficcion"
         )
     )
 }

@@ -21,6 +21,8 @@
 		CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */; };
 		CF41AD192B64801E009DFCCA /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */; };
 		CF41AD1B2B648050009DFCCA /* TabScreensViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */; };
+		CF4784532B699AB10055624B /* SearchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4784522B699AB10055624B /* SearchScreenView.swift */; };
+		CF4784562B699CF30055624B /* SearchVideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4784552B699CF30055624B /* SearchVideoCardView.swift */; };
 		CF802FE02B684F27003B0116 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF802FDF2B684F27003B0116 /* Auth.swift */; };
 		CF8D376F2B649091001988D9 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D376E2B649091001988D9 /* utils.swift */; };
 		CF8FBEB32B687E1D001B8368 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = CF8FBEB22B687E1D001B8368 /* SwiftUIFontIcon */; };
@@ -76,6 +78,8 @@
 		CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
 		CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreensViews.swift; sourceTree = "<group>"; };
+		CF4784522B699AB10055624B /* SearchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenView.swift; sourceTree = "<group>"; };
+		CF4784552B699CF30055624B /* SearchVideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVideoCardView.swift; sourceTree = "<group>"; };
 		CF802FDF2B684F27003B0116 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		CF8D376E2B649091001988D9 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		CF9EA7202B65B55600382B24 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 		CF1D013A2B5B2AA000E196FB /* views */ = {
 			isa = PBXGroup;
 			children = (
+				CF4784542B699C170055624B /* searchScreen */,
 				CF1D01402B5B309C00E196FB /* components */,
 				CF1D013B2B5B2AB000E196FB /* screen */,
 			);
@@ -189,6 +194,7 @@
 				CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */,
 				CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */,
 				CF9EA7202B65B55600382B24 /* LoginScreenView.swift */,
+				CF4784522B699AB10055624B /* SearchScreenView.swift */,
 			);
 			path = screen;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 				CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */,
 			);
 			path = enums;
+			sourceTree = "<group>";
+		};
+		CF4784542B699C170055624B /* searchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CF4784552B699CF30055624B /* SearchVideoCardView.swift */,
+			);
+			path = searchScreen;
 			sourceTree = "<group>";
 		};
 		CF8D376D2B649078001988D9 /* config */ = {
@@ -365,11 +379,13 @@
 				CF9EA7212B65B55600382B24 /* LoginScreenView.swift in Sources */,
 				CF9EA75D2B65B8E300382B24 /* AppDelegate.swift in Sources */,
 				CF3AC6462B6337C00006AF2C /* VideoScreenView.swift in Sources */,
+				CF4784562B699CF30055624B /* SearchVideoCardView.swift in Sources */,
 				CF1D013F2B5B2F3200E196FB /* VideosScreenView.swift in Sources */,
 				CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */,
 				CF802FE02B684F27003B0116 /* Auth.swift in Sources */,
 				CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */,
 				CF8D376F2B649091001988D9 /* utils.swift in Sources */,
+				CF4784532B699AB10055624B /* SearchScreenView.swift in Sources */,
 				CF3AC63F2B6324D90006AF2C /* videosData.swift in Sources */,
 				CF1D01422B5B30DB00E196FB /* CardVideoView.swift in Sources */,
 				CF41AD1B2B648050009DFCCA /* TabScreensViews.swift in Sources */,
