@@ -72,6 +72,7 @@ struct Authentication {
     }
     
     func logOut() {
+        UserDefaults.standard.set(false, forKey: "isLoading")
         UserDefaults.standard.set(false, forKey: "signedIn")
         UserDefaults.standard.set("", forKey: "userName")
         UserDefaults.standard.set("", forKey: "userEmail")

@@ -17,10 +17,6 @@ struct SettingsScreenView: View {
         NavigationStack {            
             ScrollView {
                 VStack {
-//                    Image("man")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fill)
-//                        .frame(width: 200, height: 200, alignment: .center)
                     AsyncImage(url: URL(string: userPhotoURL))
                         .cornerRadius(500)
                 }
