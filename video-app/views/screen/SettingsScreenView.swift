@@ -9,27 +9,31 @@ import SwiftUI
 
 struct SettingsScreenView: View {
     @State var counter: Int = 0
+    @AppStorage("userName") var userName: String = ""
+    @AppStorage("userEmail") var userEmail: String = ""
+    @AppStorage("userPhotoURL") var userPhotoURL: String = ""
     
     var body: some View {
         NavigationStack {            
             ScrollView {
                 VStack {
-                    Image("man")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 200, height: 200, alignment: .center)
+//                    Image("man")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fill)
+//                        .frame(width: 200, height: 200, alignment: .center)
+                    AsyncImage(url: URL(string: userPhotoURL))
                         .cornerRadius(500)
                 }
                 .padding(.vertical, 30)
                 
                 VStack {
-                    Text("Jorge Ortiz")
+                    Text(userName)
                         .foregroundColor(.white)
                         .bold()
                         .font(.title)
                         .padding(.bottom, 10)
                     
-                    Text(verbatim: "ortiz.mata.jorge@gmail.com")
+                    Text(verbatim: userEmail)
                         .foregroundColor(.white)
                         .bold()
                         .font(.body)
@@ -72,11 +76,17 @@ struct SettingsScreenView: View {
                     .cornerRadius(10)
                     
                     HStack {
-                        Text("Cerrar sesion")
-                            .foregroundColor(.white)
-                        Spacer()
-                        Image(systemName: "arrowtriangle.right.fill")
-                            .foregroundColor(.white)
+                        Button {
+                            Authentication.share.logOut()
+                        } label: {
+                            HStack {
+                                Text("Cerrar sesion")
+                                    .foregroundColor(.white)
+                                Spacer()
+                                Image(systemName: "arrowtriangle.right.fill")
+                                    .foregroundColor(.white)
+                            }
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .topLeading)
                     .padding()

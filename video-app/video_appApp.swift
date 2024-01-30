@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct video_appApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("signedIn") var isSignIn: Bool = false
+    @AppStorage("userName") var userName: String = ""
+    @AppStorage("userEmail") var userEmail: String = ""
+    @AppStorage("userPhotoURL") var userPhotoURL: String = ""
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if(isSignIn) {
+                WelcomeScreenView()
+            } else {
+                LoginScreenView()
+            }
         }
     }
 }
