@@ -9,35 +9,57 @@ import SwiftUI
 
 struct CardVideoView: View {
     var video: VideoModel
+    @State var isFavorite: Bool = false
     
     var body: some View {
-        NavigationLink(destination: VideoScreenView(video: video)) {
-             VStack {
-                Image(video.imageName)
-                    .resizable()
-                    .frame(width: 110, height: 150)
-                    .cornerRadius(10)
-                VStack {
-                    HStack {
-                        Text(video.name)
-                            .bold()
-                            .font(.title3)
-                            .foregroundColor(.white)
-                        Spacer()
-                    }
-                    HStack {
-                        Text("Estrellas")
-                            .font(.caption)
-                            .foregroundColor(.white)
-                        Spacer()
-                        Text("Vistas")
-                            .font(.caption)
-                            .foregroundColor(.white)
+        ZStack {
+            NavigationLink(destination: VideoScreenView(video: video)) {
+                VStack{
+                    Image(video.imageName)
+                        .resizable()
+                        .frame(width: 110, height: 150)
+                        .cornerRadius(10)
+                    
+                    Spacer()
+                    
+                    Text(video.name)
+                        .bold()
+                        .font(.body)
+                        .foregroundColor(.white)
+                }
+                .padding(.bottom, 20)
+                
+            }
+            .frame(width: 110, height: 170)
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    Button {
+                        handleOnIsFavorite()
+                    } label: {
+                        if(isFavorite) {
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.red)
+                        } else {
+                            Image(systemName: "heart")
+                                .foregroundColor(.white)
+                        }
                     }
                 }
+                Spacer()
             }
+            .padding(3)
         }
-        .padding(2)
+        .frame(width: 110, height: 170)
+        .background(.black)
+        .cornerRadius(10)
+    }
+            
+            
+    
+    private func handleOnIsFavorite() {
+        isFavorite = !isFavorite
     }
 }
 
