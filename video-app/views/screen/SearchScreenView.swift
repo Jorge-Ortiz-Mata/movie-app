@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchScreenView: View {
     @State var movies: [VideoModel] = videosDataList
-    @State var movieSearched: String = ""
     
     var body: some View {
         NavigationStack {
@@ -26,22 +25,7 @@ struct SearchScreenView: View {
                         .padding(.horizontal)
                     }
                     
-                    VStack(alignment: .leading) {
-                        Text("Search by name:")
-                            .foregroundColor(.white)
-                            .fontWeight(.semibold)
-                        
-                        TextField("", text: $movieSearched)
-                            .padding(7)
-                            .foregroundColor(.white)
-                            .border(Color(red: 0.2, green: 0.2, blue: 0.2))
-                            .cornerRadius(4)
-                            .onChange(of: movieSearched) {
-                                filterMovies()
-                            }
-                        
-                    }
-                    .padding()
+                    SearchFormView(handleOnChange: (filterMovies))
                     
                     VStack {
                         ForEach(movies) { video in
@@ -63,12 +47,12 @@ struct SearchScreenView: View {
         }
     }
     
-    private func filterMovies() {
-        if(movieSearched.count == 0) {
+    private func filterMovies(name: String) {
+        if(name.count == 0) {
             movies = videosDataList
         } else {
             movies = videosDataList.filter { video in
-                if(video.name.contains(movieSearched)) {
+                if(video.name.contains(name)) {
                     true
                 } else {
                     false
