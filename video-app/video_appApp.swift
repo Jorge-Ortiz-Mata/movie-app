@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct CommentModelD: Identifiable {
+    var id: Int
+}
+
 @main
 struct video_appApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate

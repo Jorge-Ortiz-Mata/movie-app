@@ -6,69 +6,15 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct VideoScreenView: View {
     var video: VideoModel
     @Environment(\.dismiss) private var dismiss
-    @State var rating: Int = 3
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack {
-                    VideoPlayer(player: AVPlayer(url:  URL(string: video.videoURL)!))
-                        .frame(height: 250)
-                    
-                    HStack {
-                        VStack {
-                            Image(video.imageName)
-                                .resizable()
-                                .frame(width: 130, height: 180)
-                        }
-                        VStack(alignment: .leading) {
-                            Group {
-                                Text(video.name)
-                                    .bold()
-                                    .font(.title)
-                                .foregroundColor(.white)
-                            }
-                            .padding(.bottom, 10)
-                            
-                            Group {
-                                Text("Duracion: \(video.duration) min")
-                                    .font(.body)
-                                .foregroundColor(.white)
-                            }
-                            .padding(.bottom, 10)
-                                
-                            
-                            HStack {
-                                Text("Reviews: ")
-                                    .foregroundColor(.white)
-                                    .font(.body)
-                                Group {
-                                    Text(String(repeating: "⭐️", count: rating))
-                                        .font(.caption)
-                                }
-                            }
-                            .padding(.bottom, 2)
-                            
-                            Group {
-                                Text("Categoria: \(video.category)")
-                                    .font(.footnote)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                        Spacer()
-                    }
-                    
-                    Group {
-                        Text(video.description)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.top, 20)
-                }
+                MovieInfo(video: video)
             }
             .toolbar(.hidden, for: .tabBar)
             .background(.black)
