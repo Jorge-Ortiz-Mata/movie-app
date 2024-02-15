@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftUIFontIcon
 
 struct LoginScreenView: View {
-    @AppStorage("isLoading") var isLoading: Bool = false
+    @State var isLoading: Bool = false
     @State var opacity = 0.0
     
     var body: some View {
@@ -36,7 +36,8 @@ struct LoginScreenView: View {
                 } else {
                     VStack {
                         Button {
-                            UserDefaults.standard.set(true, forKey: "isLoading")
+                            isLoading = true
+//                            UserDefaults.standard.set(true, forKey: "isLoading")
                             Authentication.share.signInWithGoogle(presenting: getRootViewController()) { error in }
                         } label: {
                             HStack {

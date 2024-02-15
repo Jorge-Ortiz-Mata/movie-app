@@ -18,7 +18,6 @@ struct video_appApp: App {
     @AppStorage("userName") var userName: String = ""
     @AppStorage("userEmail") var userEmail: String = ""
     @AppStorage("userPhotoURL") var userPhotoURL: String = ""
-    @AppStorage("isLoading") var isLoading: Bool = false
     
     var body: some Scene {
         WindowGroup {

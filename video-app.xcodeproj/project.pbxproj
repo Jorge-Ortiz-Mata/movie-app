@@ -18,7 +18,6 @@
 		CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6412B6324F00006AF2C /* VideoModel.swift */; };
 		CF3AC6442B6335A30006AF2C /* VideoSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */; };
 		CF3AC6462B6337C00006AF2C /* VideoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */; };
-		CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */; };
 		CF41AD192B64801E009DFCCA /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */; };
 		CF41AD1B2B648050009DFCCA /* TabScreensViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */; };
 		CF4784532B699AB10055624B /* SearchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4784522B699AB10055624B /* SearchScreenView.swift */; };
@@ -77,7 +76,6 @@
 		CF3AC6412B6324F00006AF2C /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		CF3AC6432B6335A30006AF2C /* VideoSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSectionTitle.swift; sourceTree = "<group>"; };
 		CF3AC6452B6337C00006AF2C /* VideoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenView.swift; sourceTree = "<group>"; };
-		CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEnum.swift; sourceTree = "<group>"; };
 		CF41AD182B64801E009DFCCA /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		CF41AD1A2B648050009DFCCA /* TabScreensViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreensViews.swift; sourceTree = "<group>"; };
 		CF4784522B699AB10055624B /* SearchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenView.swift; sourceTree = "<group>"; };
@@ -91,6 +89,7 @@
 		CF9EA75C2B65B8E300382B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9EA7632B65D05400382B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CF9EA7652B65D16A00382B24 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		CFC4D4E22B6ABA1000EA3C3C /* secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +160,12 @@
 				CF9EA7642B65D15100382B24 /* helpers */,
 				CF9EA75B2B65B8C100382B24 /* services */,
 				CF8D376D2B649078001988D9 /* config */,
-				CF3AC6472B6348430006AF2C /* enums */,
 				CF3AC6402B6324DF0006AF2C /* models */,
 				CF3AC63D2B6324C10006AF2C /* data */,
 				CF1D013A2B5B2AA000E196FB /* views */,
 				CF1D01302B5B286A00E196FB /* Assets.xcassets */,
 				CF1D01322B5B286A00E196FB /* Preview Content */,
+				CFC4D4E22B6ABA1000EA3C3C /* secrets.xcconfig */,
 			);
 			path = "video-app";
 			sourceTree = "<group>";
@@ -185,12 +184,12 @@
 				CF4784592B69D6530055624B /* videoScreen */,
 				CF4784542B699C170055624B /* searchScreen */,
 				CF1D01402B5B309C00E196FB /* components */,
-				CF1D013B2B5B2AB000E196FB /* screen */,
+				CF1D013B2B5B2AB000E196FB /* screens */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		CF1D013B2B5B2AB000E196FB /* screen */ = {
+		CF1D013B2B5B2AB000E196FB /* screens */ = {
 			isa = PBXGroup;
 			children = (
 				CF1D013C2B5B2AC600E196FB /* WelcomeScreenView.swift */,
@@ -201,7 +200,7 @@
 				CF9EA7202B65B55600382B24 /* LoginScreenView.swift */,
 				CF4784522B699AB10055624B /* SearchScreenView.swift */,
 			);
-			path = screen;
+			path = screens;
 			sourceTree = "<group>";
 		};
 		CF1D01402B5B309C00E196FB /* components */ = {
@@ -227,14 +226,6 @@
 				CF3AC6412B6324F00006AF2C /* VideoModel.swift */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		CF3AC6472B6348430006AF2C /* enums */ = {
-			isa = PBXGroup;
-			children = (
-				CF3AC6482B63485D0006AF2C /* CategoryEnum.swift */,
-			);
-			path = enums;
 			sourceTree = "<group>";
 		};
 		CF4784542B699C170055624B /* searchScreen */ = {
@@ -396,7 +387,6 @@
 				CF4784562B699CF30055624B /* SearchVideoCardView.swift in Sources */,
 				CF1D013F2B5B2F3200E196FB /* VideosScreenView.swift in Sources */,
 				CF47845B2B69D66E0055624B /* MovieInfo.swift in Sources */,
-				CF3AC6492B63485D0006AF2C /* CategoryEnum.swift in Sources */,
 				CF4784582B69ADA10055624B /* SearchFormView.swift in Sources */,
 				CF802FE02B684F27003B0116 /* Auth.swift in Sources */,
 				CF3AC6422B6324F00006AF2C /* VideoModel.swift in Sources */,
@@ -546,6 +536,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "video-app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -576,6 +568,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "video-app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
